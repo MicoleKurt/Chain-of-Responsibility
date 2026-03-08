@@ -1,15 +1,22 @@
 ## Problem 
-Implement factory design pattern using Pet as the factory interface. The interface implements two methods: makeSound() and play().
+Automated Waste Management System
+Background: Municipalities and cities face significant challenges in managing and efficiently disposing of waste. Traditional waste collection methods often result in delays, inefficiencies, and high operational costs. An innovative solution is needed to automate the waste management process, ensuring timely collection and disposal while optimizing resource utilization.
+Objective: Develop an automated waste management system that uses a chain of responsibility pattern to ensure efficient waste collection and disposal. The system should handle different types of waste containers and trigger appropriate disposal actions based on the type and capacity of each container.
+Requirements:
+Waste Container: Create a class to represent waste containers, each with a specific capacity and type of waste (e.g., organic, recyclable, hazardous).
+Waste Collection Chain: Implement a chain of responsibility pattern to handle different types of waste containers. Each handler in the chain should be responsible for collecting and disposing of a specific type of waste.
+Waste Collection Process:
+The system should initialize a chain of waste collectors, each responsible for a different type of waste.
+When a waste container is full or needs disposal, the system should trigger the waste collection process.
+The appropriate waste collector in the chain should handle the disposal based on the type and capacity of the waste container.
+Validation: Ensure that waste containers are correctly identified and disposed of by the appropriate waste collector in the chain.
+Your solution should include in your github account:
+Problem Statement
+UML Diagram
+Solution Codes
 
-Dog and Cat are concrete objects that implements Pet interface.
-
-PetRecord holds attributes such as petId, petName, and Pet.
-
-Clinic would be the client object.
-
-Refer to the UML Class Diagram
 
 
 
 ## Class Diagram
-![image](https://github.com/JerryEsperanza/factoryPattern/assets/142370600/0506f134-a5f6-4d98-a817-cd6f7a8466c7)
+<img width="1799" height="1002" alt="image" src="https://github.com/user-attachments/assets/68fde412-1e1e-43c1-9a85-f3cb5438046f" />
